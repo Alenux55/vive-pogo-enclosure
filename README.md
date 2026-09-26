@@ -1,13 +1,13 @@
 # VIVE pogo enclosure
 
-Prototype enclosure for the VIVE pogo PCB. Current baseline: **V17**.
+Prototype enclosure for the VIVE pogo PCB.
 
 ## Files
 
-- `cad/Vive-Shoe-V17.FCStd`: authoritative editable FreeCAD assembly, including feature history and embedded controller/PCBA references. Open with FreeCAD 1.1 or later. Expand the shell operations to inspect their inputs; some imported reference geometry is a fixed solid rather than a sketch-based model.
+- `cad/Vive-Shoe.FCStd`: authoritative editable FreeCAD assembly, including feature history and embedded controller/PCBA references. Open with FreeCAD 1.1 or later. Expand the shell operations to inspect their inputs; some imported reference geometry is a fixed solid rather than a sketch-based model.
 - `exports/print/`: upright shell STEP and STL files, positioned with their lowest point at Z=0. Prefer STEP for OrcaSlicer. `PCBA-flat-no-pins.step` is only a printable fit mockup, with underside projections removed; it is not a fabrication model.
 - `exports/assembly/`: shells and complete assembly in their original assembly coordinates.
-- `references/pcb/`: September 24 PCB STEP snapshot used to build V17. The PCB's electrical source and manufacturing releases belong in the separate `vive-pogo` repository.
+- `references/pcb/`: September 24 PCB STEP snapshot used to build the enclosure. The PCB's electrical source and manufacturing releases belong in the separate `vive-pogo` repository.
 - `docs/`: design notes and validation evidence.
 - `scripts/export_shells.py`: regenerate shell STEP/STL files from the saved FreeCAD model.
 
@@ -27,8 +27,8 @@ Hardware baseline: four McMaster 96817A840 M2 x 4 screws per shoe. Nominal pilot
 
 ## Fit status
 
-The September 25 released PCB copy checked against V17 matched its board, connector and resistor geometry. No solid shell or PCB-screw intersections were found. The released contact pads are 2 mm diameter at 3 mm pitch and match the opening.
+The September 25 released PCB copy checked against the enclosure matched its board, connector and resistor geometry. No solid shell or PCB-screw intersections were found. The released contact pads are 2 mm diameter at 3 mm pitch and match the opening.
 
 The connector touches the rear shell nominally. The sampled insertion path has a minimum clearance of about 0.014 mm; this is not a continuous-path or manufacturing-tolerance guarantee. The fabrication stack reports 0.89 mm overall versus the STEP's 0.8 mm substrate. A printed PCB mockup fitted successfully according to the user; assembled hardware still needs a physical fit and charging test.
 
-See `docs/V17-design-notes.md` and `docs/validation/` for the original V17 checks. Those JSON files predate the September 25 release review.
+See `docs/design-notes.md` and `docs/validation/` for the original design checks. Those JSON files predate the September 25 release review.

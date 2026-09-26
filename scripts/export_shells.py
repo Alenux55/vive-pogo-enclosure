@@ -1,16 +1,16 @@
-"""Export saved V17 shell geometry; run with FreeCAD's Python environment."""
+"""Export the saved shell geometry; run with FreeCAD's Python environment."""
 from pathlib import Path
 import FreeCAD as App
 import MeshPart
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / 'cad' / 'Vive-Shoe-V17.FCStd'
+SOURCE = ROOT / 'cad' / 'Vive-Shoe.FCStd'
 
 def main():
     doc = App.openDocument(str(SOURCE))
     try:
         for name in ('FrontShell', 'RearShell'):
-            shape = doc.getObject(name + 'V17').Shape.copy()
+            shape = doc.getObject(name + 'Export').Shape.copy()
             if not shape.isValid() or len(shape.Solids) != 1:
                 raise ValueError(name + ': expected one valid solid')
             shape.exportStep(str(ROOT / 'exports' / 'assembly' / (name + '.step')))
