@@ -1,0 +1,19 @@
+{
+  "FrontShell": {
+    "valid_single_solid": true,
+    "volume": 3856.5677706697556
+  },
+  "RearShell": {
+    "valid_single_solid": true,
+    "volume": 3799.8239685554818
+  },
+  "ActualPCB_overlap": 0.0,
+  "ActualConnector_overlap": 0.0,
+  "ActualCopper_overlap": 0.0,
+  "ActualResistor_overlap": 0.0,
+  "ControllerSeatLoft_overlap": 0.0,
+  "pcb_pilot_diameter": 1.6,
+  "screw": "96817A840 M2 x 4, four per shoe",
+  "rotation": "180 degrees about plug axis; local center Y=-3.355; preserves 3 degree tilt",
+  "floor_nominal_mm": 0.6
+}

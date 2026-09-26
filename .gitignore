@@ -1,0 +1,11 @@
+# FreeCAD backups and lock files
+*.FCBak
+*.FCStd1
+*.FCStd2
+*.FCStd.*
+*.lck
+# Local tooling
+__pycache__/
+*.pyc
+Thumbs.db
+.DS_Store
