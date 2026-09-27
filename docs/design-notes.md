@@ -1,4 +1,16 @@
-# Vive shoe — September 24 PCB
+# Vive shoe — PCB fit and enclosure changes
+
+## September 27 — three-contact R2 PCB
+
+The current reference snapshot is `VIVE Pogo Board R2.0 STEP - No Variant (2026-09-27 02-24).step`. The three underside targets are 2 mm diameter, at board coordinates X=10.8 mm and Y=2, 5, 8 mm. Registration retains the existing connector alignment and 3-degree board tilt.
+
+The rear shell's native `ContactSlot` capsule is extended to cover the three targets. Its two cylinders and bridge remain editable, driven by `ContactRowX`, `ContactRowFrontY`, `ContactRowRearY`, and `SlotWidth` in the Dimensions spreadsheet. The original ordered model groups remain intact. The imported PCB/copper references are refreshed from R2, and the reference contact markers now show all three pads.
+
+Use the regenerated rear-shell STEP/STL for the next print. The existing slicer 3MF still contains the older shell geometry; replace that object and re-slice before using it. The dock's earlier two-contact coordinate table also needs revision during dock hardware/mechanical integration.
+
+See `validation/three-contact-update.json` for the geometric checks and the transformed contact centres.
+
+## Earlier fit and printability history
 
 Source snapshot: vive-pogo-source.step, copied from E:/Documents/GitHub/vive-pogo/vive-pogo.step (modified September 24, 2026, 22:56:51). The PCB repository was not edited.
 

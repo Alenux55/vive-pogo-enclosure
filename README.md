@@ -2,6 +2,8 @@
 
 Prototype enclosure for the VIVE pogo PCB.
 
+September 27 update: the rear contact opening now accommodates the R2 board's three 2 mm pads at 3 mm pitch. Its native cylinder/bridge construction and spreadsheet controls are preserved. Use the current STEP/STL exports; the saved slicer 3MF has older geometry and must have its rear-shell object replaced and re-sliced. The front shell is geometrically unchanged. Detailed measurements are in `docs/validation/three-contact-update.json`.
+
 ## Files
 
 - `cad/Vive-Shoe.FCStd`: authoritative editable FreeCAD assembly, including feature history and embedded controller/PCBA references. Open with FreeCAD 1.1 or later. Some imported reference geometry is a fixed solid rather than a sketch-based model.

@@ -1,0 +1,51 @@
+{
+  "source": "VIVE Pogo Board R2.0 STEP - No Variant (2026-09-27 02-24).step",
+  "pad_centres_shoe_mm": [
+    [
+      -0.04999999999999716,
+      0.09086266130171494,
+      -4.623652369388179
+    ],
+    [
+      -0.049999999999998934,
+      -2.9050259429620064,
+      -4.466644500659346
+    ],
+    [
+      -0.049999999999998934,
+      -5.900914547225731,
+      -4.309636631930513
+    ]
+  ],
+  "slot_width_mm": 2.5,
+  "slot_length_mm": 8.491777208527445,
+  "front_symmetric_difference_mm3": 0.0,
+  "rear_removed_mm3": 4.597763047869668,
+  "rear_added_mm3": 0.10393367134091926,
+  "shells": {
+    "FrontShell": {
+      "valid": true,
+      "solids": 1
+    },
+    "RearShell": {
+      "valid": true,
+      "solids": 1
+    }
+  },
+  "pcba_overlap_mm3": {
+    "FrontShell_ActualConnector": 0.0,
+    "FrontShell_ActualPCB": 0.0,
+    "FrontShell_ActualCopper": 0.0,
+    "FrontShell_ActualResistor": 0.0,
+    "RearShell_ActualConnector": 0.0,
+    "RearShell_ActualPCB": 0.0,
+    "RearShell_ActualCopper": 0.0,
+    "RearShell_ActualResistor": 0.0
+  },
+  "pad_access_overlap_mm3": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "comparison_note": "Independent saved documents reopened for before/after comparison."
+}
